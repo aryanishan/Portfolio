@@ -1,0 +1,60 @@
+/* Dark Theme Variables */
+.dark-mode {
+    /* Colors */
+    --primary-color: #6c8bff;
+    --secondary-color: #ff8b8b;
+    --accent-color: #70e26e;
+    --dark-color: #f8f9fa;
+    --light-color: #1a202c;
+    --gray-color: #a0aec0;
+    --light-gray: #2d3748;
+    --white: #2d3748;
+    --black: #ffffff;
+    
+    /* Shadows for dark mode */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode body {
+    background-color: #121826;
+    color: var(--dark-color);
+}
+
+.dark-mode .navbar {
+    background-color: #1a202c;
+    box-shadow: var(--shadow-sm);
+}
+
+.dark-mode .logo {
+    color: var(--dark-color);
+}
+
+.dark-mode .hero {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+.dark-mode .skill-category,
+.dark-mode .project-card {
+    background-color: #1a202c;
+}
+
+.dark-mode .skill-tag,
+.dark-mode .project-tech span {
+    background-color: #2d3748;
+    color: var(--dark-color);
+}
+
+.dark-mode .footer {
+    background-color: #0d1117;
+}
+
+.dark-mode .menu-toggle {
+    color: var(--dark-color);
+}
+
+.dark-mode .nav-links {
+    background-color: #1a202c;
+}

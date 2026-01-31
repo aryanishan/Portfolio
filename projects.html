@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Aryan Gupta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Aryan<span>Gupta</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="section-title">My <span class="highlight">Projects</span></h1>
+            <p class="section-subtitle">A collection of my work showcasing skills in web development, AI/ML, and data science.</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Project 1 - Spam SMS Detector -->
+                <div class="project-item" data-category="ai" id="spam-detector">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">AI/ML</div>
+                        <h3 class="project-title">Spam SMS Detector</h3>
+                        <div class="project-meta">Nov 2025 | Python, Flask, NLP</div>
+                        <p class="project-description">Trained an NLP-based machine learning model (TF-IDF + Naive Bayes) to classify SMS messages as spam or ham with high accuracy. Built a Flask API to serve real-time predictions using the exported model.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Flask</span>
+                            <span>NLP</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Weather App -->
+                <div class="project-item" data-category="web" id="weather-app">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Web App</div>
+                        <h3 class="project-title">Weather Fetching App</h3>
+                        <div class="project-meta">Sep 2025 | JavaScript, API</div>
+                        <p class="project-description">Developed an interactive Weather Dashboard using HTML, CSS, and JavaScript that retrieves real-time weather data via API and displays temperature, humidity, and wind speed for any city. Implemented error handling, loading animation, and recent-search history using LocalStorage.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>OpenWeather API</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - E-commerce Platform -->
+                <div class="project-item" data-category="fullstack" id="ecommerce">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Full Stack</div>
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <div class="project-meta">Dec 2025 | React, Node.js, MongoDB</div>
+                        <p class="project-description">A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and payment integration. Features include product search, filtering, user reviews, and an admin dashboard for inventory management.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>JWT Auth</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Power BI Dashboard -->
+                <div class="project-item" data-category="data">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Data Science</div>
+                        <h3 class="project-title">Business Analytics Dashboard</h3>
+                        <div class="project-meta">Jul 2025 | Power BI, DAX, SQL</div>
+                        <p class="project-description">Designed interactive Power BI dashboards using DAX, data modeling, and real business datasets - transforming raw data into clear decision-ready visual reports. Applied MySQL for structured data management with complex JOIN queries.</p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Data Modeling</span>
+                            <span>MySQL</span>
+                            <span>Excel</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - Task Management App -->
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">Web App</div>
+                        <h3 class="project-title">Task Management Application</h3>
+                        <div class="project-meta">Aug 2025 | JavaScript, LocalStorage</div>
+                        <p class="project-description">A productivity web app for managing daily tasks with features like task creation, editing, deletion, marking as complete, and filtering. Data persists using LocalStorage with a clean, intuitive UI.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>Drag & Drop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - Sentiment Analysis -->
+                <div class="project-item" data-category="ai">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">AI/ML</div>
+                        <h3 class="project-title">Social Media Sentiment Analysis</h3>
+                        <div class="project-meta">Oct 2025 | Python, NLP, Flask</div>
+                        <p class="project-description">Built a sentiment analysis model to classify social media posts as positive, negative, or neutral. Implemented using NLTK and scikit-learn with a web interface for real-time analysis of user-input text.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>Scikit-learn</span>
+                            <span>Flask</span>
+                            <span>TextBlob</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aryanishan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Aryan Gupta</h3>
+                    <p>Computer Science Student & Developer passionate about AI, Web Development, and Data Science.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> myteam034221@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9555886922</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/aryan-gupta-ago" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/aryanishan" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:myteam034221@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Aryan Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
