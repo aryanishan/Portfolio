@@ -90,7 +90,7 @@ h3 {
 
 p {
     margin-bottom: var(--spacing-md);
-    color: var(--gray-color);
+    color: white;
 }
 
 a {
